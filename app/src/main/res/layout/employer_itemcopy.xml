@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="10"
+    android:background="@drawable/card_bg"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardview">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:weightSum="1"
+                 android:orientation="horizontal"
+                 android:id="@+id/linear1">
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_weight=".8"
+                     >
+                     <de.hdodenhof.circleimageview.CircleImageView
+                     android:layout_width="70dp"
+                     android:layout_height="70dp"
+                     android:id="@+id/imageview"
+                     />
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_weight=".2"
+                     android:gravity="center"
+                     android:orientation="vertical"
+                     android:layout_marginTop="5dp"
+                     >
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:orientation="horizontal"
+                         android:weightSum="1"
+
+                         >
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:text="Name"
+                             android:layout_gravity="left"
+                             android:textStyle="bold"
+                             android:id="@+id/namex"
+                             android:padding="5dp"
+                             android:layout_weight=".6"
+                             android:layout_marginLeft="5dp"/>
+                         <ImageView
+                             android:layout_width="15dp"
+                             android:layout_height="15dp"
+                             android:layout_marginTop="8dp"
+                             android:layout_marginRight="5dp"
+                             android:id="@+id/phone_no_iconx"
+                             android:src="@drawable/call"/>
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:text="8124426687"
+                             android:id="@+id/phone_nox"
+                             android:layout_margin="5dp"
+                             android:layout_weight=".4"
+
+
+                             />
+
+
+                     </LinearLayout>
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:orientation="horizontal"
+                         android:weightSum="1"
+                         >
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:text="23"
+                             android:id="@+id/agex"
+                             android:layout_gravity="left"
+                             android:layout_below="@id/namex"
+                             android:layout_weight=".6"
+                             android:padding="5dp"
+                             android:layout_marginLeft="5dp"/>
+                         <ImageView
+                             android:layout_width="15dp"
+                             android:layout_height="15dp"
+                             android:layout_marginTop="8dp"
+                             android:layout_marginRight="5dp"
+                             android:id="@+id/email_iconx"
+                             android:src="@drawable/email"/>
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:text="munirajan24@gmail.com "
+                             android:id="@+id/emailx"
+                             android:layout_margin="5dp"
+                             android:layout_weight=".4"
+                             android:layout_below="@id/phone_nox"
+                             android:layout_alignParentRight="true"
+                             android:layout_marginLeft="5dp"/>
+
+
+                     </LinearLayout>
+
+
+                 </LinearLayout>
+
+
+
+             </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+</RelativeLayout>

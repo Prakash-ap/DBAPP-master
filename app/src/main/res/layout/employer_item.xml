@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="10"
+    android:background="@drawable/card_bg"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="80dp"
+    android:layout_marginTop="5dp"
+    android:layout_weight="0">
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:layout_width="70dp"
+          android:layout_height="70dp"
+          android:id="@+id/profilex"
+          android:padding="10dp"
+          />
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/profilex"
+           android:layout_marginTop="10dp"
+           android:orientation="vertical"
+           android:id="@+id/layout_one"
+           android:gravity="center"
+           >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_toRightOf="@id/profilex"
+            android:layout_gravity="left"
+            android:textStyle="bold"
+            android:id="@+id/namex"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23"
+            android:id="@+id/agex"
+            android:layout_gravity="left"
+            android:layout_toRightOf="@id/profilex"
+            android:layout_below="@id/namex"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"/>
+       </LinearLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="right"
+        android:layout_weight="10">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/phone_no_iconx"
+                android:src="@drawable/call"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8124426687"
+                android:id="@+id/phone_nox"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentRight="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/email_iconx"
+                android:src="@drawable/email"/>
+            <!--<ImageView-->
+            <!--android:layout_width="15dp"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:id="@+id/map_iconx"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_below="@id/emailx"-->
+            <!--android:layout_toLeftOf="@id/map_locatex"-->
+            <!--android:src="@drawable/ic_map"/>-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Address"-->
+            <!--android:id="@+id/map_locatex"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_below="@id/emailx"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_alignParentRight="true" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="munirajan24@gmail.com "
+                android:id="@+id/emailx"
+                android:layout_margin="5dp"
+                android:layout_below="@id/phone_nox"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
